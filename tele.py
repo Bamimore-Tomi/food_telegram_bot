@@ -8,7 +8,7 @@ from rasa.core.utils import EndpointConfig
 TOKEN = '1135010132:AAFOtVvCONRWjUl2rhzLHP6kcECBVUSxhig'
 app = Flask(__name__)
 
-interpreter = RasaNLUInterpreter('./models/ali/nlu')
+#interpreter = RasaNLUInterpreter('./models/ali/nlu')
 
 agent = Agent.load('./models/ali', action_endpoint=EndpointConfig(url="https://alimentos-actions.herokuapp.com/webhook"))
 def applyAi(message):
