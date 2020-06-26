@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 #interpreter = Interpreter.load('./models/alimentos/nlu')
 
-agent = Agent.load('./models/20200626-200236.tar.gz', action_endpoint=EndpointConfig(url="https://alimentos-actions.herokuapp.com/webhook"))
+agent = Agent.load('./models/ali', action_endpoint=EndpointConfig(url="https://alimentos-actions.herokuapp.com/webhook"))
 def applyAi(message):
     responses = asyncio.run(agent.handle_message(message))
     text = response["text"]
