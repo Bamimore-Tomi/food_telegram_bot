@@ -2,5 +2,4 @@ rasa_core
 flask
 asyncio
 gunicorn
-python-telegram-bot
 tornado

@@ -2,9 +2,9 @@ from flask import Flask, copy_current_request_context
 from flask import Flask, request
 import telegram
 import asyncio
-from rasa_core.agent import Agent
-from rasa_core.utils import EndpointConfig
-TOKEN = '1135010132:AAFOtVvCONRWjUl2rhzLHP6kcECBVUSxhig'
+from rasa.core.agent import Agent
+from rasa.core.utils import EndpointConfig
+TOKEN = '135010132:AAFOtVvCONRWjUl2rhzLHP6kcECBVUSxhig'
 app = Flask(__name__)
 
 #interpreter = Interpreter.load('./models/alimentos/nlu')
