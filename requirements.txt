@@ -1,0 +1,4 @@
+rasa_core
+flask
+asyncio
+gunicorn
