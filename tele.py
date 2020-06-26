@@ -2,7 +2,7 @@ from flask import Flask, copy_current_request_context
 from flask import Flask, request
 import telegram
 import asyncio
-from rasa.core.interpreter import RasaNLUInterpreter
+#from rasa.core.interpreter import RasaNLUInterpreter
 from rasa.core.agent import Agent
 from rasa.core.utils import EndpointConfig
 TOKEN = '1135010132:AAFOtVvCONRWjUl2rhzLHP6kcECBVUSxhig'
@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 interpreter = RasaNLUInterpreter('./models/ali/nlu')
 
-agent = Agent.load('./models/ali', interpreter=interpreter action_endpoint=EndpointConfig(url="https://alimentos-actions.herokuapp.com/webhook"))
+agent = Agent.load('./models/ali', action_endpoint=EndpointConfig(url="https://alimentos-actions.herokuapp.com/webhook"))
 def applyAi(message):
     responses = asyncio.run(agent.handle_message(message))
     text = response["text"]
