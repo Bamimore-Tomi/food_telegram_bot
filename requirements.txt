@@ -3,4 +3,5 @@ flask
 asyncio
 argparse
 spacy
+tornado
 
