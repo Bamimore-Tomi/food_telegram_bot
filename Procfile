@@ -1,1 +1,1 @@
-web: python -m spacy download en && python tele.py
+web: python -m spacy download en && python gram.py --token 1135010132:AAFOtVvCONRWjUl2rhzLHP6kcECBVUSxhig --tunnel https://alimentoscharis.herokuapp.com

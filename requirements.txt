@@ -1,5 +1,5 @@
-rasa
+rasa_core
 flask
 asyncio
-gunicorn
+argparse
 
