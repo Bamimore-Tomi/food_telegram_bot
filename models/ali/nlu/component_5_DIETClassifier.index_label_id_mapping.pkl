@@ -1,1 +1,0 @@
-{"0": "affirm", "1": "cancel", "2": "delivery_address", "3": "deny", "4": "goodbye", "5": "greet", "6": "order_quantity"}
