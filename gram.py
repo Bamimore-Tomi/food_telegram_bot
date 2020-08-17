@@ -9,10 +9,10 @@ from flask import request
 from flask import Response
 import asyncio
 # RASA core imports
-from rasa_core.agent import Agent
-from rasa_core.interpreter import RasaNLUInterpreter
-from rasa_core.utils import EndpointConfig
-from rasa_core.channels.telegram import TelegramOutput
+from rasa.core.agent import Agent
+from rasa.core.interpreter import RasaNLUInterpreter
+from rasa.core.utils import EndpointConfig
+from rasa.core.channels.telegram import TelegramOutput
 
 
 # Telegram bot API base url
