@@ -1,7 +1,0 @@
-rasa_core
-flask
-asyncio
-argparse
-spacy
-tornado
-
